@@ -1,0 +1,132 @@
+:root{
+    --dark: #374151;
+    --darker: #172937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'fira sans', sans-serif;
+}
+body{
+    display: flex;/*fica flex mas vai um para o lado do outro*/
+    flex-direction: column;/*faz ele voltar para coluna mas sendo flex*/
+    min-height: 100vh;/*min-hight impede que o valor usado na propriedade seja menor do que o especificado*/
+    background-color: var(--dark);
+    color: #fff;
+}
+header{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+input, button{ /*esses elementos como none para que fique plain e posso fazer da minha maneira*/
+    appearance: none;
+    border: none;   
+    outline: none;
+    background: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    background-color: var(--darker);
+    color: var(--light);
+
+}
+#new-task-input::placeholder{
+    color: var(--gray);
+}
+#new-task-submit{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--pink);
+    cursor: pointer;
+    transition: 0.4s;
+    
+    background-image: linear-gradient(to right, var(--pink), var(--purple));    /*need to be fixed!*/
+    -webkit-background-clip: text;   /*need to be fixed!*/
+    -webkit-text-fill-collor: transparent;   /*need to be fixed!*/
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%; 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;     
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--darkest);
+}
+#tasks .task .content .text{
+    width: 100%;
+    font-size: 1.125rem;
+    display: block;
+    transition: 0.4s;
+    color: var(--light);
+}
+#tasks .task .content .text:not(:read-only){
+    color: var(--pink);
+}#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.task .actions button:hover{
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .edit{
+    color: var(--pink); /*need to be fixed!*/
+    background-image: linear-gradient(to right, var(--pink), var(--purple));    /*need to be fixed!*/
+    -webkit-background-clip: text;   /*need to be fixed!*/
+    -webkit-text-fill-collor: transparent;   /*need to be fixed!*/
+}
+.task .actions .delete{
+    color: crimson;
+}
