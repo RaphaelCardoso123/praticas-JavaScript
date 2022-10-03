@@ -63,7 +63,7 @@ input, button{ /*esses elementos como none para que fique plain e posso fazer da
     
     background-image: linear-gradient(to right, var(--pink), var(--purple));    /*need to be fixed!*/
     -webkit-background-clip: text;   /*need to be fixed!*/
-    -webkit-text-fill-collor: transparent;   /*need to be fixed!*/
+    -webkit-text-fill-color: transparent;   /*need to be fixed!*/
 }
 #new-task-submit:hover{
     opacity: 0.8;
