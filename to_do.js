@@ -10,11 +10,11 @@ window.addEventListener('load', () =>{
 
         const task = input.value;
 
-        if( !task ){
+        if(!task){
             alert("Please fill out the task!");
-            /*return;*/
-        }else{
-            console.log("Success!!")
+            return;
+        /*}else{
+            console.log("Success!!")*/
         }
 
         const task_el = document.createElement("div");
