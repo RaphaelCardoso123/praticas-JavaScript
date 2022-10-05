@@ -95,6 +95,9 @@ main{
     margin-bottom: 1rem;
     background-color: var(--darkest);
 }
+#tasks .task .content{
+    flex: 1 1 0%;
+}
 #tasks .task .content .text{
     width: 100%;
     font-size: 1.125rem;
