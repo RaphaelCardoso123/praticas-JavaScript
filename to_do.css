@@ -50,7 +50,6 @@ input, button{ /*esses elementos como none para que fique plain e posso fazer da
     font-size: 1.25rem;
     background-color: var(--darker);
     color: var(--light);
-
 }
 #new-task-input::placeholder{
     color: var(--gray);
