@@ -8,16 +8,16 @@ window.addEventListener('load', () =>{
 
 
 
-        const tasks = input.value;
+        const task = input.value;
 
-        if( !tasks ){
+        if( !task ){
             alert("Please fill out the task!");
             /*return;*/
         }else{
             console.log("Success!!")
         }
 
-        /*const task_el = document.createElement("div");
+        const task_el = document.createElement("div");
         task_el.classList.add("task");
 
         const task_content_el = document.createElement("div");
@@ -26,7 +26,7 @@ window.addEventListener('load', () =>{
 
         task_el.appendChild(task_content_el);
 
-        list_el.appendChild(task_el);*/
+        list_el.appendChild(task_el);
 
 
    })
