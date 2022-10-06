@@ -13,18 +13,31 @@
 </head>
 <body>
     <div>
+        
         <header>
-            <h1>To Do Practice</h1>
+            <h1>To Do Practice</h1> <!--Título-->
         </header>
+
         <form id="todo-form">
-            <p>Adicione sua tarefa:</p>
+            <p>Adicione sua tarefa:</p> <!--Descrição p/ o input (caixa de txt)-->
             <div class="form-control">
-                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?"> <!--Caixa de txt a ser preenchida-->
                 <button type="submit">
-                    <i class="fa-thin fa-plus"></i>
+                    <i class="fa-thin fa-plus"></i> <!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
         </form>
+
+        <form id="edit-form">
+            <p>Edite sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input"/>
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+        </form>
+
     </div>
 </body>
 </html>
