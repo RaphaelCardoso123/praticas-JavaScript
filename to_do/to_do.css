@@ -13,9 +13,9 @@
     font-family: 'fira sans', sans-serif;
 }
 body{
-    display: flex;/*fica flex mas vai um para o lado do outro*/
-    flex-direction: column;/*faz ele voltar para coluna mas sendo flex*/
-    min-height: 100vh;/*min-hight impede que o valor usado na propriedade seja menor do que o especificado*/
+    display: flex; /*fica flex mas vai um para o lado do outro*/
+    flex-direction: column; /*faz ele voltar para coluna mas sendo flex*/
+    min-height: 100vh; /*min-hight impede que o valor usado na propriedade seja menor do que o especificado*/
     background-color: var(--dark);
     color: #fff;
 }
