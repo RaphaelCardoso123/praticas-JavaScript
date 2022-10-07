@@ -13,78 +13,78 @@
 
 </head>
 <body>
-    <div style="border: 1px solid blue;">
+    <div class="todo-container">
         
         <header>
-            <h1 style="border: 1px solid red;">To Do Practice</h1> <!--Título-->
+            <h1>To Do Practice</h1> <!--Título-->
         </header>
 
-        <form style="border: 1px solid black;" id="todo-form">
-            <p style="border: 1px solid red;">Adicione sua tarefa:</p> <!--Descrição p/ o input (caixa de txt)-->
-            <div style="border: 1px solid blue;" class="form-control"><!--essas divs são importante p/ poder realocar usando o flex-->
-                <input style="border: 1px solid red;" type="text" id="todo-input" placeholder="O que você vai fazer?"> <!--Caixa de txt a ser preenchida-->
-                <button style="border: 1px solid rgb(31, 243, 12);" type="submit">
-                    <i style="border: 1px solid red;" class="fa-thin fa-plus"></i> <!--Botão com sinal de (+) p/ submit-->
+        <form id="todo-form">
+            <p >Adicione sua tarefa:</p> <!--Descrição p/ o input (caixa de txt)-->
+            <div class="form-control"><!--essas divs são importante p/ poder realocar usando o flex-->
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?"> <!--Caixa de txt a ser preenchida-->
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i> <!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
         </form>
 
-        <form style="border: 1px solid black;" id="edit-form">
-            <p style="border: 1px solid red;">Edite sua tarefa</p> <!--Descrição p/ o input a ser editada(caixa de txt)-->
-            <div style="border: 1px solid blue;" class="form-control">
-                <input style="border: 1px solid red;" type="text" id="edit-input"/> <!--Caixa de txt a ser editada-->
-                <button style="border: 1px solid rgb(31, 243, 12);" type="submit">
-                    <i style="border: 1px solid red;" class="fa-solid fa-check-double"></i> <!--Botão com sinal de (+) p/ submit-->
+        <form id="edit-form" class="hide">
+            <p >Edite sua tarefa</p> <!--Descrição p/ o input a ser editada(caixa de txt)-->
+            <div class="form-control">
+                <input type="text" id="edit-input"/> <!--Caixa de txt a ser editada-->
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i> <!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
         </form>
-        <button style="border: 1px solid rgb(31, 243, 12);" id="cancel-edit-btn">Cancelar</button> <!--Botão p/ cancelar a edição-->
+        <button id="cancel-edit-btn">Cancelar</button> <!--Botão p/ cancelar a edição-->
 
-        <div style="border: 1px solid blue;" id="toolbar">
-            <div style="border: 1px solid blue;" id="search">
-                <h4 style="border: 1px solid red;">Pesquisar:</h4> <!--Descrição p/ o campo de pesquisa-->
-                <form style="border: 1px solid black;">
-                    <input style="border: 1px solid red;" type="text" id="search-input" placeholder="Buscar"> <!--Para inserir a palavra a ser buscada-->
-                    <button style="border: 1px solid rgb(31, 243, 12);" id="erase-button"> 
-                        <i style="border: 1px solid red;" class="fa-solid fa-delete-left"></i> <!--Botão com sinal p/ apagar-->
+        <div id="toolbar">
+            <div id="search">
+                <h4 >Pesquisar:</h4> <!--Descrição p/ o campo de pesquisa-->
+                <form >
+                    <input type="text" id="search-input" placeholder="Buscar"> <!--Para inserir a palavra a ser buscada-->
+                    <button id="erase-button"> 
+                        <i class="fa-solid fa-delete-left"></i> <!--Botão com sinal p/ apagar-->
                     </button>
                 </form>
             </div>      
         </div>
 
-        <div style="border: 1px solid blue;" id="filter">
-            <h4 style="border: 1px solid red;">Filtrar:</h4> <!--Descrição do campo filtrar-->
-            <select style="border: 1px solid rgb(233, 149, 233)" id="filter-select">
+        <div id="filter">
+            <h4 >Filtrar:</h4> <!--Descrição do campo filtrar-->
+            <select id="filter-select">
                 <option value="all">Todos</option> <!--Opções de busca pelo filtro-->
                 <option value="done">Feitos</option>
                 <option value="todo">A fazer</option>
             </select>
         </div>
 
-        <div style="border: 1px solid blue;" id="todo_list">
-            <div style="border: 1px solid blue;" class="todo">
-                <h3 style="border: 1px solid red;">Estou fazendo alguma coisa...</h3> <!--Descrição da lista-->
-                <button style="border: 1px solid rgb(31, 243, 12);" class="finish-todo"> 
-                    <i style="border: 1px solid red;" class="fa-solid fa-check"></i> <!--Botão com sinal de (check) p/ finalizar a lista feita-->
+        <div id="todo_list">
+            <div class="todo">
+                <h3 >Estou fazendo alguma coisa...</h3> <!--Descrição da lista-->
+                <button class="finish-todo"> 
+                    <i class="fa-solid fa-check"></i> <!--Botão com sinal de (check) p/ finalizar a lista feita-->
                 </button>
-                <button style="border: 1px solid rgb(31, 243, 12);" class="edit-todo">
-                    <i style="border: 1px solid red;" class="fa-solid fa-pen"></i> <!--Botão com sinal de (caneta) p/ editar a lista feita-->
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i> <!--Botão com sinal de (caneta) p/ editar a lista feita-->
                 </button>
-                <button style="border: 1px solid rgb(31, 243, 12);" class="remove-todo">
-                    <i style="border: 1px solid red;" class="fa-solid fa-xmark"></i> <!--Botão com sinal de (x) p/ apagar a lista feita-->
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i> <!--Botão com sinal de (x) p/ apagar a lista feita-->
                 </button>
             </div>
             
-            <div style="border: 1px solid blue;" class="todo"> <!--Repetindo a ação de cima / uma segunda lista -->
-                <h3 style="border: 1px solid red;">Praticar JavaScript!</h3> 
-                <button style="border: 1px solid rgb(31, 243, 12);" class="finish-todo">
-                    <i style="border: 1px solid red;" class="fa-solid fa-check"></i>
+            <div class="todo"> <!--Repetindo a ação de cima / uma segunda lista -->
+                <h3 >Praticar JavaScript!</h3> 
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
                 </button>
-                <button style="border: 1px solid rgb(31, 243, 12);" class="edit-todo">
-                    <i style="border: 1px solid red;" class="fa-solid fa-pen"></i>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
                 </button>
-                <button style="border: 1px solid rgb(31, 243, 12);" class="remove-todo">
-                    <i style="border: 1px solid red;" class="fa-solid fa-xmark"></i>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
         </div>
