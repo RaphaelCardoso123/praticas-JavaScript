@@ -55,4 +55,18 @@ input select{
     padding: 0 1rem 1rem;
     border-bottom: 1px solid rgb(35, 133, 214);
 }
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(35, 133, 214);
+}
+#todo-form, #edit-form, p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: 0.3rem;
+}
 
