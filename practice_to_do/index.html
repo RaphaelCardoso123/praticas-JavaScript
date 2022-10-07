@@ -29,14 +29,26 @@
         </form>
 
         <form id="edit-form">
-            <p>Edite sua tarefa</p>
+            <p>Edite sua tarefa</p> <!--Descrição p/ o input a ser editada(caixa de txt)-->
             <div class="form-control">
-                <input type="text" id="edit-input"/>
+                <input type="text" id="edit-input"/> <!--Caixa de txt a ser editada-->
                 <button type="submit">
-                    <i class="fa-solid fa-check-double"></i>
+                    <i class="fa-solid fa-check-double"></i> <!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
         </form>
+
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4> <!--Descrição p/ o campo de pesquisa-->
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar"> <!--Para inserir a palavra a ser buscada-->
+                    <button id="erase-button"> 
+                        <i class="fa-solid fa-delete-left"></i> <!--Botão com sinal p/ apagar-->
+                    </button>
+                </form>
+            </div>
+        </div>
 
     </div>
 </body>
