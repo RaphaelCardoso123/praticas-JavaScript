@@ -37,6 +37,7 @@
                 </button>
             </div>
         </form>
+        <button id="cancel-edit-btn"></button> <!--Botão p/ cancelar a edição-->
 
         <div id="toolbar">
             <div id="search">
@@ -47,7 +48,16 @@
                         <i class="fa-solid fa-delete-left"></i> <!--Botão com sinal p/ apagar-->
                     </button>
                 </form>
-            </div>
+            </div>      
+        </div>
+
+        <div id="filter">
+            <h4>Filtrar:</h4> <!--Descrição do campo filtrar-->
+            <select id="filter-select">
+                <option value="all">Todos</option> <!--Opções de busca pelo filtro-->
+                <option value="done">Feitos</option>
+                <option value="todo">A Fazer</option>
+            </select>
         </div>
 
     </div>
