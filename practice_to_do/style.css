@@ -25,15 +25,16 @@ button{
 }
 button:hover{
     background-color: #102f5e;
-    color: white;
+    color: white; 
 }
-button i:hover{
-    color:white;
-}
-button i{
+
+button .i{
     color: #102f5e;
     font-weight: bold;
     pointer-events: none;
+}
+button i:hover{
+    color:white;
 }
 input, select{
     padding: .25rem .5rem;
