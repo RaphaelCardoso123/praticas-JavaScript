@@ -36,7 +36,7 @@ const saveTodo = (text, done = 0, save = 1) => {
 
     const deleteBtn = document.createElement("button")
     deleteBtn.classList.add("remove-todo");
-    deleteBtn.innerHTML = '<i class="fa-solid xmark"></i>';
+    deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     todo.appendChild(deleteBtn);
 
     //Dados da localStorage:
@@ -70,7 +70,7 @@ const updateTodo = (text) => {
             todoTitle.innerText = text;
             //Dados da localStorage:
             updateTodoLocalStorage(oldInputValue, text);
-        }
+        };
     });
 };
 
@@ -83,11 +83,9 @@ const getSearchedTodos = (search) => {
 
         todo.style.display = "flex";
 
-        console.log(todoTitle); //APAGAR
-
         if(!todoTitle.includes(search)) {
             todo.style.display = "none;"
-        }
+        };
     });
 };
 
@@ -112,7 +110,7 @@ const filterTodos = (filterValue) => {
 
         default:
             break;
-    }
+    };
 };
 
 
@@ -124,7 +122,7 @@ todoForm.addEventListener("submit", (e) => {
 
     if (inputValue) {
         saveTodo(inputValue);
-    }
+    };
 });
 
 
@@ -135,28 +133,28 @@ document.addEventListener("click", (e) => {
 
     if(parentEl && parentEl.querySelector("h3")) {
         todoTitle = parentEl.querySelector("h3").innerText || "";
-    }
+    };
 
     if (targetEl.classList.contains("finish-todo")) {
         parentEl.classList.toggle("done");
         
         //Dados da localStorage:
         updateTodoStatusLocalStorage(todoTitle);
-    }
+    };
 
     if (targetEl.classList.contains("remove-todo")) {
         parentEl.remove();
 
         //Dados da localStorage:
         removeTodoLocalStorage(todoTitle);
-    }
+    };
 
     if (targetEl.classList.contains("edit-todo")) {
         toggleForms();
 
         editInput.value = todoTitle;
         oldInputValue = todoTitle;
-    }
+    };
 });
 
 
@@ -174,7 +172,7 @@ editForm.addEventListener("submit", (e) => {
 
     if (editInputValue) {
         updateTodo(editInputValue);
-    }
+    };
 
     toggleForms();
 });
@@ -242,11 +240,5 @@ const updateTodoLocalStorage = (todoOldText, todoNewText) => {
     todos.map((todo) => todo.text === todoOldText ? (todo.text = todoNewText) : null);
     localStorage.setItem("todos", JSON.stringify(todos));
 };
-
-
-
-
-
-
 
 loadTodos();
