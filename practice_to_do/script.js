@@ -49,7 +49,7 @@ const saveTodo = (text, done = 0, save = 1) => {
     }
     
     todoList.appendChild(todo);
-    todoInput.value = " ";
+    todoInput.value = "";
 };
 
 
@@ -70,7 +70,7 @@ const updateTodo = (text) => {
             todoTitle.innerText = text;
             //Dados da localStorage:
             updateTodoLocalStorage(oldInputValue, text);
-        };
+        }
     });
 };
 
@@ -87,7 +87,7 @@ const getSearchedTodos = (search) => {
 
         if(!todoTitle.includes(search)) {
             todo.style.display = "none;"
-        };
+        }
     });
 };
 
@@ -112,7 +112,7 @@ const filterTodos = (filterValue) => {
 
         default:
             break;
-    };
+    }
 };
 
 
@@ -124,7 +124,7 @@ todoForm.addEventListener("submit", (e) => {
 
     if (inputValue) {
         saveTodo(inputValue);
-    };
+    }
 });
 
 
@@ -134,29 +134,29 @@ document.addEventListener("click", (e) => {
     let todoTitle;
 
     if(parentEl && parentEl.querySelector("h3")) {
-        todoTitle = parentEl.querySelector("h3").innerText || " ";
-    };
+        todoTitle = parentEl.querySelector("h3").innerText || "";
+    }
 
     if (targetEl.classList.contains("finish-todo")) {
         parentEl.classList.toggle("done");
         
         //Dados da localStorage:
         updateTodoStatusLocalStorage(todoTitle);
-    };
+    }
 
     if (targetEl.classList.contains("remove-todo")) {
         parentEl.remove();
 
         //Dados da localStorage:
         removeTodoLocalStorage(todoTitle);
-    };
+    }
 
     if (targetEl.classList.contains("edit-todo")) {
         toggleForms();
 
         editInput.value = todoTitle;
         oldInputValue = todoTitle;
-    };
+    }
 });
 
 
@@ -174,7 +174,7 @@ editForm.addEventListener("submit", (e) => {
 
     if (editInputValue) {
         updateTodo(editInputValue);
-    };
+    }
 
     toggleForms();
 });
@@ -188,7 +188,7 @@ searchInput.addEventListener("keyup", (e) => {
 
 eraseBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    searchInput.value = " ";
+    searchInput.value = "";
     searchInput.dispatchEvent(new Event("keyup"));
 });
 
@@ -239,9 +239,14 @@ const updateTodoStatusLocalStorage = (todotext) => {
 
 const updateTodoLocalStorage = (todoOldText, todoNewText) => {
     const todos = getTodosLocalStorage();
-    todos.map((todo) => todo.text ===todoOldText ? (todo.text = todoNewText) : null);
+    todos.map((todo) => todo.text === todoOldText ? (todo.text = todoNewText) : null);
     localStorage.setItem("todos", JSON.stringify(todos));
 };
+
+
+
+
+
 
 
 loadTodos();
