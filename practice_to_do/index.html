@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- https://cdnjs.com/libraries/font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <script src="script.js" defer></script> <!--defer serve p/ o js rodar depois do html-->    
+    <script src="script.js" defer></script><!--defer serve p/ o js rodar depois do html-->    
     <title>Practice To Do</title>
 
 </head>
@@ -16,45 +16,45 @@
     <div class="todo-container">
         
         <header>
-            <h1>To Do Practice</h1> <!--Título-->
+            <h1>To Do Practice</h1> 
         </header>
 
-        <form id="todo-form">
-            <p >Adicione sua tarefa:</p> <!--Descrição p/ o input (caixa de txt)-->
+        <form id="todo-form"><!--querySelector-JS-->
+            <p >Adicione sua tarefa:</p> 
             <div class="form-control"><!--essas divs são importante p/ poder realocar usando o flex-->
-                <input type="text" id="todo-input" placeholder="O que você vai fazer?"> <!--Caixa de txt a ser preenchida-->
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?"><!--Caixa de preencher/querySelector-JS--> 
                 <button type="submit">
-                    <i class="fa-thin fa-plus"></i> <!--Botão com sinal de (+) p/ submit-->
+                    <i class="fa-thin fa-plus"></i><!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
         </form>
 
-        <form id="edit-form" class="hide"> <!--HIDE para que essa parte só seja exibiba quando a tarefa precisar ser editada-->
-            <p >Edite sua tarefa</p> <!--Descrição p/ o input a ser editada(caixa de txt)-->
+        <form id="edit-form" class="hide"><!--HIDE para só ser exibiba quando precisar ser editada/querySelector-JS-->
+            <p >Edite sua tarefa</p> 
             <div class="form-control">
-                <input type="text" id="edit-input"/> <!--Caixa de txt a ser editada-->
+                <input type="text" id="edit-input"/><!--Caixa de txt a ser editada/querySelector-JS-->
                 <button type="submit">
-                    <i class="fa-solid fa-check-double"></i> <!--Botão com sinal de (+) p/ submit-->
+                    <i class="fa-solid fa-check-double"></i><!--Botão com sinal de (+) p/ submit-->
                 </button>
             </div>
-            <button id="cancel-edit-btn">Cancelar</button> <!--Botão p/ cancelar a edição-->
+            <button id="cancel-edit-btn">Cancelar</button><!--Botão p/ cancelar a edição/querySelector-JS-->
         </form>        
 
         <div id="toolbar">
             <div id="search">
-                <h4 >Pesquisar:</h4> <!--Descrição p/ o campo de pesquisa-->
+                <h4 >Pesquisar:</h4>
                 <form >
-                    <input type="text" id="search-input" placeholder="Buscar"> <!--Para inserir a palavra a ser buscada-->
-                    <button id="erase-button"> 
-                        <i class="fa-solid fa-delete-left"></i> <!--Botão com sinal p/ apagar-->
+                    <input type="text" id="search-input" placeholder="Buscar"><!--Insere palavra a ser buscada/querySelector-JS-->
+                    <button id="erase-button"><!--querySelector-JS-->
+                        <i class="fa-solid fa-delete-left"></i><!--Botão com sinal p/ apagar-->
                     </button>
                 </form>
             </div>      
         
 
             <div id="filter">
-                <h4 >Filtrar:</h4> <!--Descrição do campo filtrar-->
-                <select id="filter-select">
+                <h4 >Filtrar:</h4> 
+                <select id="filter-select"><!--querySelector-JS-->
                     <option value="all">Todos</option> <!--Opções de busca pelo filtro-->
                     <option value="done">Feitos</option>
                     <option value="todo">A fazer</option>
@@ -62,21 +62,21 @@
             </div>
         </div>
 
-        <div id="todo-list">
+        <div id="todo-list"><!--querySelector-JS-->
             <div class="todo done">
-                <h3 >Estou fazendo alguma coisa...</h3> <!--Descrição da lista-->
+                <h3 >Estou fazendo alguma coisa...</h3><!--Descrição da lista-->
                 <button class="finish-todo"> 
-                    <i class="fa-solid fa-check"></i> <!--Botão com sinal de (check) p/ finalizar a lista feita-->
+                    <i class="fa-solid fa-check"></i><!--Botão com sinal de (check) p/ finalizar a lista feita-->
                 </button>
                 <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i> <!--Botão com sinal de (caneta) p/ editar a lista feita-->
+                    <i class="fa-solid fa-pen"></i><!--Botão com sinal de (caneta) p/ editar a lista feita-->
                 </button>
                 <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i> <!--Botão com sinal de (x) p/ apagar a lista feita-->
+                    <i class="fa-solid fa-xmark"></i><!--Botão com sinal de (x) p/ apagar a lista feita-->
                 </button>
             </div>
             
-            <div class="todo"> <!--Repetindo a ação de cima / uma segunda lista -->
+            <div class="todo"><!--Repetindo a ação de cima / uma segunda lista -->
                 <h3 >Praticar JavaScript!</h3> 
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
