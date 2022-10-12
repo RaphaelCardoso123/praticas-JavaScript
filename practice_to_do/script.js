@@ -75,9 +75,45 @@ const updateTodo = (text) => {
 };
 
 
+const getSearchedTodos = (search) => {
+    const todos = document.querySelectorAll(".todo");
+
+    todos.forEach((todo) => {
+        const todoTitle = todo.querySelector("h3").innerText.toLowerCase();
+
+        todo.style.display = "flex";
+
+        console.log(todoTitle); //APAGAR
+
+        if(!todoTitle.includes(search)) {
+            todo.style.display = "none;"
+        };
+    });
+};
 
 
+const filterTodos = (filterValue) => {
+    const todos = document.querySelectorAll(".todo");
 
+    switch(filterValue) {
+        case "all":
+            todos.forEach((todo) => (todo.style.display = "flex"));
+            break;
+
+        case "done":
+            todos.forEach((todo) => todo.classList.contains("done") ? (todo.style.display = "flex") : 
+                                    (todo.style.display = "none"));
+            break;
+
+        case "todo":
+            todos.forEach((todo) => !todo.classList.contains("done") ? (todo.style.display = "flex") :
+                                    (todo.style.display = "none"));
+            break;
+
+        default:
+            break;
+    };
+};
 
 
 //Eventos
@@ -88,48 +124,71 @@ todoForm.addEventListener("submit", (e) => {
 
     if (inputValue) {
         saveTodo(inputValue);
-    }
+    };
 });
+
 
 document.addEventListener("click", (e) => {
     const targetEl = e.target;
     const parentEl = targetEl.closest("div");
     let todoTitle;
 
-    if(parentEl && parentEl.querySelector("h3")){
-        todoTitle = parentEl.querySelector("h3").innerText;
-    }
+    if(parentEl && parentEl.querySelector("h3")) {
+        todoTitle = parentEl.querySelector("h3").innerText || " ";
+    };
 
-    if (targetEl.classList.contains("finish-todo")){
+    if (targetEl.classList.contains("finish-todo")) {
         parentEl.classList.toggle("done");
-    }
+        
+        //Dados da localStorage:
+        updateTodoStatusLocalStorage(todoTitle);
+    };
 
-    if (targetEl.classList.contains("remove-todo")){
+    if (targetEl.classList.contains("remove-todo")) {
         parentEl.remove();
-    }
 
-    if (targetEl.classList.contains("edit-todo")){
+        //Dados da localStorage:
+        removeTodoLocalStorage(todoTitle);
+    };
+
+    if (targetEl.classList.contains("edit-todo")) {
         toggleForms();
 
         editInput.value = todoTitle;
         oldInputValue = todoTitle;
-    }
+    };
 });
 
+
 cancelEditBtn.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     toggleForms();
 });
 
-editForm.addEventListener("submit", (e) => {
-    e.preventDefault()
 
-    const editInputValue = editInput.value
+editForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const editInputValue = editInput.value;
 
     if (editInputValue) {
-        updateTodo(editInputValue)
-    }
+        updateTodo(editInputValue);
+    };
 
-    toggleForms()
-})
+    toggleForms();
+});
+
+
+searchInput.addEventListener("keyup", (e) => {
+    const search = e.target.value;
+    getSearchedTodos(search);
+});
+
+
+eraseBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    searchInput.value = " ";
+    searchInput.dispatchEvent(new Event("keyuo"));
+});
+
