@@ -44,8 +44,7 @@
     function load_question() {
         document.querySelector("#questions").innerHTML = questions[question_number].question;
         const options = document.querySelector ('#options');
-        options.innerHTML = '';
-        
+        options.innerHTML = '';        
         for (const option of questions[question_number].options) {
             options.innerHTML += `<button class="option">${option}</button>`;
         }
