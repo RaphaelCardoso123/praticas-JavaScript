@@ -23,12 +23,12 @@
     const questions = [
         {
             question: "Where is the class you're watching from?",
-            options:["Yale", "Harvard", "Cambridge"],
+            options: ["Yale", "Harvard", "Cambridge"],
             answer: "Harvard"
         },
         {
             question: "What is Athena's favorite animal?",
-            options:["jellyfish", "penguins", "otters"],
+            options: ["jellyfish", "penguins", "otters"],
             answer:"otters"
         },
         {
