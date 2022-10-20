@@ -1,8 +1,9 @@
 body{
     text-align: center;
     font-family: sans-serif;
-}
+};
+
 button{
     margin: .5rem;
     font-size: 15px;
-}
+};
