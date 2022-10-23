@@ -1,5 +1,5 @@
 window.onload = function() {
-    const btnLoginEnter = document.querySelector("#loginEnter")
+    const btnLogin = document.querySelector("#loginEnter")
     const txtUser = document.querySelector("#user")
     const txtpassword = document.querySelector("#password")
 
@@ -18,7 +18,7 @@ window.onload = function() {
 
 
 
-    btnLoginEnter.addEventListener('click', function() {
+    btnLogin.addEventListener('click', function() {
         
         for(let reg of users) {
             
