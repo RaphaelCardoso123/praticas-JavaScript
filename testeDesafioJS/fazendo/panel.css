@@ -103,6 +103,24 @@ fieldset {
     margin-left: 90%;
 }
 
+#btn_fechar_prod {
+        color: red;
+        padding: .3rem .6rem;
+        font-size: 1rem;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 90%;
+}
+
+#btn_fechar_ped {
+    color: red;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 90%;
+}
+
 .subtitulo_label {
     margin-top: 1.5rem;
     font-size: 1rem;

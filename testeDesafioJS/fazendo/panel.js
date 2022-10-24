@@ -14,25 +14,25 @@ const btn_fechar = document.querySelector("#btn_fechar")
 //  semDisplay()
 
 
-//  const btn_fechar_prod = document.querySelector("#btn_fechar_prod")
-//  clientes.push("adicionando")
+ const btn_fechar_prod = document.querySelector("#btn_fechar_prod")
+ clientes.push("adicionando")
  
-//  btn_fechar_prod.addEventListener("click", function(){
+ btn_fechar_prod.addEventListener("click", function(){
      
-//      let divMae = document.getElementById("produtos")
-//      divMae.style.display = "block";  
+     let divMae = document.getElementById("produtos")
+     divMae.style.display = "none";  //divMae.style.display = "block"; 
 
-// })
+})
 
-// const btn_fechar_ped = document.querySelector("#btn_fechar_ped")
-// clientes.push("adicionando")
+const btn_fechar_ped = document.querySelector("#btn_fechar_ped")
+clientes.push("adicionando")
 
-// btn_fechar_ped.addEventListener("click", function(){
+btn_fechar_ped.addEventListener("click", function(){
     
-//     let divMae = document.getElementById("pedido_cliente")
-//     divMae.style.display = "block";
+    let divMae = document.getElementById("pedido_cliente")
+    divMae.style.display = "none"; //divMae.style.display = "block"; 
 
-// })
+})
 
 
 
