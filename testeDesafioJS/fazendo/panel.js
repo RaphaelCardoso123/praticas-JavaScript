@@ -7,11 +7,11 @@ const btn_fechar = document.querySelector("#btn_fechar")
     btn_fechar.addEventListener("click", function(){
         
         let divMae = document.getElementById("clientes")
-        divMae.style.display = "none";    //divMae.style.display = "block"; 
+        divMae.style.display = "block";    //divMae.style.display = "none"; p/ ver o botão fechar funcionando
 
  })
 
-//  semDisplay()
+ semDisplay() //comentar para ver o botão fechar funcionando
 
 
  const btn_fechar_prod = document.querySelector("#btn_fechar_prod")
@@ -20,7 +20,7 @@ const btn_fechar = document.querySelector("#btn_fechar")
  btn_fechar_prod.addEventListener("click", function(){
      
      let divMae = document.getElementById("produtos")
-     divMae.style.display = "none";  //divMae.style.display = "block"; 
+     divMae.style.display = "block";  //divMae.style.display = "none"; p/ ver o botão fechar funcionando
 
 })
 
@@ -30,7 +30,7 @@ clientes.push("adicionando")
 btn_fechar_ped.addEventListener("click", function(){
     
     let divMae = document.getElementById("pedido_cliente")
-    divMae.style.display = "none"; //divMae.style.display = "block"; 
+    divMae.style.display = "block"; //divMae.style.display = "none"; p/ ver o botão fechar funcionando
 
 })
 

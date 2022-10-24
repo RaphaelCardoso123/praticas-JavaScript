@@ -22,11 +22,11 @@ export function semDisplay(){
   divMae.style.display = "none";
 
         
-//   divMae = document.getElementById("produtos")
-//   divMae.style.display = "none";
+  divMae = document.getElementById("produtos")
+  divMae.style.display = "none";
 
         
-//   divMae = document.getElementById("pedido_cliente")
-//   divMae.style.display = "none";
+  divMae = document.getElementById("pedido_cliente")
+  divMae.style.display = "none";
 
 }
