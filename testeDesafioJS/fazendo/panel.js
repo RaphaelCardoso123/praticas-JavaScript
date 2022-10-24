@@ -7,7 +7,7 @@ const btn_fechar = document.querySelector("#btn_fechar")
     btn_fechar.addEventListener("click", function(){
         
         let divMae = document.getElementById("clientes")
-        divMae.style.display = "block";    
+        divMae.style.display = "block";    //divMae.style.display = "none"; 
 
  })
 
