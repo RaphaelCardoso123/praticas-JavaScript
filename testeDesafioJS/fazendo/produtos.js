@@ -16,10 +16,10 @@ export let produtos = [
 ]
 
 
-// export function semDisplay(){
+export function semDisplay(){
         
-//   let divMae = document.getElementById("clientes")
-//   divMae.style.display = "none";
+  let divMae = document.getElementById("clientes")
+  divMae.style.display = "none";
 
         
 //   divMae = document.getElementById("produtos")
@@ -29,4 +29,4 @@ export let produtos = [
 //   divMae = document.getElementById("pedido_cliente")
 //   divMae.style.display = "none";
 
-// }
+}
