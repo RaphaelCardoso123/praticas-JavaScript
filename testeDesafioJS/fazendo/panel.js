@@ -37,7 +37,6 @@ btn_fechar_ped.addEventListener("click", function(){
 
 
 
-// preciso fazer o btn fechar para produtos e pedidos
 
 
 //fazer a msm lógica só que para chamar os ids de clientes, produtos e pedidos
