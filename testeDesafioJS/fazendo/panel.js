@@ -39,7 +39,7 @@ btn_fechar_ped.addEventListener("click", function(){
 
 
 
-//      quando clica em pedido primeiro as tabelas saem com css esperado, caso contrario sai sem o css configurado
+//quando clica em pedido primeiro as tabelas saem com css esperado, caso contrario sai sem o css configurado
 //teste ok50%
 const li_clientes = document.querySelector("#li_clientes")  
 li_clientes.addEventListener("click", function(){
