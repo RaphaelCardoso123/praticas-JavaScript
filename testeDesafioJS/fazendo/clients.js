@@ -9,12 +9,12 @@ export let  clientes = [
       "codCliente"   : 1,
       "nomeCliente"  : "Bruce Wayne",
       "dataCadCli" :"01/08/2017",
-      },
-      {
-        "codCliente"   : 2,
-        "nomeCliente"  : "Diana",
-        "dataCadCli" :"02/05/2020",
-      },         
+    },
+    {
+      "codCliente"   : 2,
+      "nomeCliente"  : "Diana",
+      "dataCadCli" :"02/05/2020",
+    },         
     
 ] 
 
@@ -71,9 +71,8 @@ export function valorInicial(){
   Input3.value = clientes[0]['dataCadCli']
 }
 
-let adicionando = false
-
 //BOTÃO PARA ADICIONAR NOVO CLIENTE
+let adicionando = false
 export function novoCliente(){
   let novoCliente = document.querySelector("#novoBotaoCliente")
   novoCliente.addEventListener('click', function(){

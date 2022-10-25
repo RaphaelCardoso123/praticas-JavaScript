@@ -1,11 +1,15 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
-import {semDisplay} from './produtos.js'
+import {semDisplay, valorInicialProduto} from './produtos.js'
+
 
 //PÁGINA PANEL ABRE EM BRANCO
 semDisplay()
 
 //CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL
 valorInicial()
+
+//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL              -> teste terça/tarde
+valorInicialProduto()                                  
 
 //BOTÃO P/ FECHAR CLIENTES
 const btn_fechar = document.querySelector("#btn_fechar")   
@@ -63,4 +67,4 @@ anterCliente()
 novoCliente()
 salvarCliente()
 
-
+//------------------------------- CLIENTES -----------------------------------
