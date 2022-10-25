@@ -103,22 +103,3 @@ export function anterProduto() {
     }
   })
 }
-
-  // export function anterCliente() {
-
-  //   let btnAnterior = document.querySelector("#anteriorBotaoCliente")
-  //   btnAnterior.addEventListener('click', function(){
-  //     if(contadorClientes > 0){
-  //       adicionando = false
-  //       contadorClientes -= 1;
-  //       let Input1 = document.querySelector("#primeiroInputCliente")
-  //       Input1.value = clientes[contadorClientes]['codCliente']
-//       let Input2 = document.querySelector("#segundoInputCliente")
-//       Input2.value = clientes[contadorClientes]['nomeCliente']
-//       let Input3 = document.querySelector("#terceiroInputCliente")
-//       Input3.value = clientes[contadorClientes]['dataCadCli']
-//     } else {
-//         alert("Fim de clientes cadastrados!!")
-//     }
-//   })
-// }
