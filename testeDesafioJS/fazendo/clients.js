@@ -60,7 +60,7 @@ export function anterCliente() {
   })
 }
 
-//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL
+//CLIENTES ABRE COM O PRIMEIRO REGISTRO VISÍVEL
 export function valorInicial(){
   adicionando = false
   let Input1 = document.querySelector("#primeiroInputCliente")

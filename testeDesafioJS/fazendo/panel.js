@@ -35,7 +35,7 @@ const btn_fechar_ped = document.querySelector("#btn_fechar_ped")
     divMae.style.display = "none"; 
 })
 
-//BOTÃO P/ ABRIR CLIENTES QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTAVA ABERTA
+//BOTÃO P/ ABRIR CLIENTES QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTEJA ABERTA
 const li_clientes = document.querySelector("#li_clientes")
 
     li_clientes.addEventListener("click", function(){
@@ -44,7 +44,7 @@ const li_clientes = document.querySelector("#li_clientes")
     divPai.style.display = "block";   
  })
 
-//BOTÃO P/ ABRIR PRODUTOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTAVA ABERTA
+//BOTÃO P/ ABRIR PRODUTOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTEJA ABERTA
  const li_produtos = document.querySelector("#li_produtos")  
     li_produtos.addEventListener("click", function(){
     semDisplay()    
@@ -52,7 +52,7 @@ const li_clientes = document.querySelector("#li_clientes")
     divPai.style.display = "block";   
   })
 
-//BOTÃO P/ ABRIR PEDIDOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTAVA ABERTA
+//BOTÃO P/ ABRIR PEDIDOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTEJA ABERTA
 const li_pedidos = document.querySelector("#li_pedidos")  
     li_pedidos.addEventListener("click", function(){
     semDisplay()      

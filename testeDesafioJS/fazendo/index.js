@@ -3,7 +3,6 @@ window.onload = function() {
     const txtUser = document.querySelector("#user")
     const txtpassword = document.querySelector("#password")
 
-
     const users = [
             {
               "user" : "Master",

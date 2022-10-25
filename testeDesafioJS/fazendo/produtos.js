@@ -15,7 +15,7 @@ export let produtos = [
     
 ]
 
-//FUNÇÃO PARA LIMPAR A TELA PANEL
+//FUNÇÃO PARA LIMPAR A TELA DO PANEL
 export function semDisplay() {
         
   let divMae = document.getElementById("clientes")
@@ -28,7 +28,9 @@ export function semDisplay() {
   divMae.style.display = "none";
 }
 
-//teste terça/tarde (valorInicial)
+//teste terça/tarde 
+
+//PRODUTOS ABRE COM O PRIMEIRO REGISTRO VISÍVEL
 export function valorInicialProduto(){
   let adicionando = false
 
@@ -46,17 +48,15 @@ export function valorInicialProduto(){
 }
 
 
+//teste terça/tarde 
 
-            //PAREI AQUI ANTES DA REUNIAO
-//fazer essa parte que está comentado abaixo
-
+//BOTÃO PARA VER O PRODUTO SEGUINTE
 export let contadorProdutos = 0;
-// export let contadorClientes = 0;
+
 export function proxProduto(){
   let btnProxProd = document.querySelector("#proximoBotaoProduto")
   btnProxProd.addEventListener('click', function(){
-  adicionando = false
-
+  // adicionandoProd = false
   if(contadorProdutos < produtos.length -1) {
     contadorProdutos += 1;
     let InputProd1 = document.querySelector("#primeiroInputProduto")
@@ -76,23 +76,6 @@ export function proxProduto(){
   }
   })
 }
-  // export function proxCliente() { 
-  //   let btnProx = document.querySelector("#proximoBotaoCliente")
-  //   btnProx.addEventListener('click', function(){
-  //     adicionando = false
-  //     if(contadorClientes < clientes.length-1) {
-  //     contadorClientes += 1;
-  //     let Input1 = document.querySelector("#primeiroInputCliente")
-  //       Input1.value = clientes[contadorClientes]['codCliente']
-  //       let Input2 = document.querySelector("#segundoInputCliente")
-  //       Input2.value = clientes[contadorClientes]['nomeCliente']
-  //       let Input3 = document.querySelector("#terceiroInputCliente")
-  //       Input3.value = clientes[contadorClientes]['dataCadCli']
-  //     } else {
-//         alert("Não existe mais clientes cadastrados!!")
-//     }
-//   })  
-// } 
 
 
 
