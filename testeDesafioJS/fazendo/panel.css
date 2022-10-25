@@ -6,9 +6,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* .display_none{
+/*.display_none serve p/ abrir o panel sem abrir as pag. clientes, produtos e pedidos*/
+.display_none{  
     display: none;
-} */
+}
 
 .flex {
     display: flex;
@@ -18,7 +19,7 @@
     flex-direction: column;
 }
 
-#lado-esquerdo {
+#lado_esquerdo {
     width: 15%;
     height: 100vh;
     border-right: 1px solid black;
@@ -33,11 +34,11 @@
     justify-content: flex-start;   
 }
 
-div#lado-esquerdo ul {
+div#lado_esquerdo ul {
     width: 100%;
 }
 
-div#lado-esquerdo ul li {
+div#lado_esquerdo ul li {
     width: 100%;
     height: auto;
     margin: 4px 0;
@@ -45,7 +46,7 @@ div#lado-esquerdo ul li {
     list-style: none;
 }
 
-div#lado-esquerdo ul li:hover {
+div#lado_esquerdo ul li:hover {
     width: 100%;
     height: auto;
     margin: 4px 0;
@@ -209,6 +210,14 @@ fieldset {
     display: flex;
     border: 1px solid black;
 }
+
+/*teste pode apagar*/
+/* #produtos {
+    width: 100%; 
+    display: flex;
+
+    border: 1px solid black;
+} */
 
 #localizar_produto_div {
     margin-top: 10px;

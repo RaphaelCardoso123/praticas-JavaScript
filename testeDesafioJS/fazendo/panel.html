@@ -15,11 +15,17 @@
     <main class ="flex">
 
         <!--LADO ESQUERDO-->
-        <div class ="flex" id ="lado-esquerdo">
+        <div class ="flex" id ="lado_esquerdo">
             <ul>
-                <li><a class ="flex" href ="#"> <span class ="material-symbols-outlined">group_add</span> Clientes </a></li>
-                <li><a  class ="flex"  href ="#"> <span class ="material-symbols-outlined">redeem</span> Produtos </a></li>
-                <li><a  class ="flex"  href ="#"> <span class ="material-symbols-outlined">shopping_cart</span> Pedidos </a></li>
+                <li id="li_clientes">
+                    <a class ="flex" href ="#"><span class ="material-symbols-outlined">group_add</span>Clientes</a>
+                </li>
+                <li id="li_produtos">
+                    <a class ="flex"  href ="#"><span class ="material-symbols-outlined">redeem</span>Produtos</a>
+                </li>
+                <li id="li_pedidos">
+                    <a class ="flex"  href ="#"><span class ="material-symbols-outlined">shopping_cart</span>Pedidos</a>
+                </li>
             </ul>
         </div>
 
@@ -29,7 +35,7 @@
                 
                 <!--CLIENTE--> <!--id="cliente" foi criada pra testar fechar janela, não tem no css-->
                 <form id="clientes" class="none" action =""> 
-                    <fieldset>
+                    <fieldset id="cliente_fieldset">
                         <span id ="btn_fechar"><strong>x</strong></span> 
 
                         <label for ="cliente_titulo" id ="cliente_titulo" class ="flex"><strong>Clientes</strong></label> 
