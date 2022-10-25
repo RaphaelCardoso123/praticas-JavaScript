@@ -39,8 +39,8 @@ btn_fechar_ped.addEventListener("click", function(){
 
 
 
-
-//teste
+//      quando clica em pedido primeiro as tabelas saem com css esperado, caso contrario sai sem o css configurado
+//teste ok50%
 const li_clientes = document.querySelector("#li_clientes")  
 li_clientes.addEventListener("click", function(){
         
@@ -64,7 +64,26 @@ li_clientes.addEventListener("click", function(){
           divPai.style.display = "block";   
    })
 
-   //teste
-   
-
  comDisplay()
+
+
+
+
+
+
+   //teste
+//    const lado_esquerdo = document.querySelectorAll("#lado_esquerdo")
+
+//    let janelaAberta = []
+//    lado_esquerdo.forEach(item => {
+//     item.addEventListener('click', function() {
+//         if(janelaAberta.length != 0) {
+//             let fecharJanela = document.querySelector('#${janelaAberta[0]}')
+//             fecharJanela.classList.add('fechar')
+//             janelaAberta = []
+//         }
+//         let janela = document.querySelector('#${item.dataset.janela}')
+//         janela.classList.remove('fechar')
+//         janelaAberta.push(item.dataset.janela)
+//     });
+//    })
