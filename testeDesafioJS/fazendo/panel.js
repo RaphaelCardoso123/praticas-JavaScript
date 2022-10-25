@@ -1,5 +1,5 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
-import {semDisplay, valorInicialProduto, proxProduto} from './produtos.js'
+import {semDisplay, valorInicialProduto, proxProduto, anterProduto} from './produtos.js'
 
 
 //PÁGINA PANEL ABRE EM BRANCO
@@ -68,5 +68,5 @@ novoCliente()
 salvarCliente()
 
 //------------------------------- CLIENTES -----------------------------------
-//PAREI AQUI ANTES DA REUNIAO
 proxProduto()
+anterProduto()
