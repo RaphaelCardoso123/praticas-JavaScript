@@ -4,11 +4,9 @@
     <meta charset ="UTF-8">
     <meta http-equiv ="X-UA-Compatible" content ="IE=edge">
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
-    <link href ="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel ="stylesheet" />
-    
+    <link href ="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel ="stylesheet" />  
     <script type="module" src="panel.js"></script>
-    <link rel ="stylesheet" href ="panel.css">
-    
+    <link rel ="stylesheet" href ="panel.css">   
     <title>Desafio Panel</title>
 </head>
 <body>
@@ -17,23 +15,25 @@
         <!--LADO ESQUERDO-->
         <div class ="flex" id ="lado_esquerdo">
             <ul>
-                <li id="li_clientes"> <!--apagar data-janela="clientes" (fiz pelo ultimo teste)-->
+                <li id="li_clientes"> <!--data-janela="clientes"(teste)-->
                     <a class ="flex" href ="#"><span class ="material-symbols-outlined">group_add</span>Clientes</a>
                 </li>
-                <li id="li_produtos"> <!--apagar data-janela="produtos" (fiz pelo ultimo teste)-->
+
+                <li id="li_produtos"> 
                     <a class ="flex"  href ="#"><span class ="material-symbols-outlined">redeem</span>Produtos</a>
                 </li>
-                <li id="li_pedidos"> <!--apagar data-janela="pedidos" (fiz pelo ultimo teste)-->
+
+                <li id="li_pedidos"> 
                     <a class ="flex"  href ="#"><span class ="material-symbols-outlined">shopping_cart</span>Pedidos</a>
                 </li>
             </ul>
         </div>
-
-        <!--LADO DIREITO--> <!--data-status="close" foi criada pra testar deixar janelas não visível, não tem no css-->
-        <div class ="flex" id ="lado-direito"  data-status="close"> 
+       
+        <!--LADO DIREITO--> <!--data-status="close" testar janelas não visíveis-->
+        <div class ="flex" id ="lado_direito"  data-status="close"> 
             <div id ="forms" class ="flex column">
                 
-                <!--CLIENTE--> <!--id="cliente" foi criada pra testar fechar janela, não tem no css-->
+                <!--CLIENTE--> <!--id="clientes" foi criada para js-->
                 <form id="clientes" class="none" action =""> 
                     <fieldset id="cliente_fieldset">
                         <span id ="btn_fechar"><strong>x</strong></span> 
@@ -41,18 +41,18 @@
                         <label for ="cliente_titulo" id ="cliente_titulo" class ="flex"><strong>Clientes</strong></label> 
                                
                         <label for ="codigo" class ="subtitulo_label flex">Código</label>
-                        <input type ="text" class ="cliente_input flex" name ="codigo"> 
+                        <input type ="text" id="primeiroInputCliente" class ="cliente_input flex" name ="codigo"> 
             
                         <label for ="nome" class ="subtitulo_label flex">Nome</label>
-                        <input type ="text" class ="cliente_input flex" name ="nome"> 
+                        <input type ="text" id="segundoInputCliente" class ="cliente_input flex" name ="nome"> 
             
                         <label for ="data_cadastro" class ="subtitulo_label flex">Data Cadastro</label>
-                        <input type ="text" class ="cliente_input flex" name ="codigo">
+                        <input type ="text" id="terceiroInputCliente" class ="cliente_input flex" name ="codigo">
             
-                        <input type ="button" class ="btn_cliente_listar" value ="<"> 
-                        <input type ="button" class ="btn_cliente_listar" value =">"> 
-                        <input type ="button" class ="btn_novo" value ="Novo"> 
-                        <input type ="button" class ="btn_salvar" value ="Salvar"> 
+                        <input type ="button" id="anteriorBotaoCliente" class ="btn_cliente_listar" value ="<"> 
+                        <input type ="button" id="proximoBotaoCliente" class ="btn_cliente_listar" value =">"> 
+                        <input type ="button" id="novoBotaoCliente" class ="btn_novo" value ="Novo"> 
+                        <input type ="button" id="salvarNovoCliente" class ="btn_salvar" value ="Salvar"> 
                     </fieldset>
                 </form>
                                                                           

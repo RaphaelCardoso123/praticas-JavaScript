@@ -18,7 +18,7 @@ window.onload = function() {
 
 
     btnLogin.addEventListener('click', function() {
-        //registro foi uma váriavel qualquer que criei aqui.
+
         let autenticar = false
         for(let registro of users) {
           console.log(registro)
@@ -26,7 +26,6 @@ window.onload = function() {
             window.location.href = './panel.html'
             autenticar = true
            }
-
         }
         if(autenticar == false) {
             alert("Usuário ou senha incorreta!!! Tente novamente.")
