@@ -103,8 +103,7 @@ export function salvarCliente(){
       clientes.push({
         "codCliente"   : Input1.value,
         "nomeCliente"  : Input2.value,
-        "dataCadCli" : Input3.value,
-      
+        "dataCadCli" : Input3.value,      
       })
       adicionando = false
       alert('Novo cliente foi salvo.')
