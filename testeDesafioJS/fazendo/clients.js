@@ -19,9 +19,8 @@ export let  clientes = [
 ] 
 
 export let contadorClientes = 0;
-//CONTADOR CLIENTES
 
-
+//BOTÃO PARA VER O CLIENTE SEGUINTE
 export function proxCliente() {
   
   let btnProx = document.querySelector("#proximoBotaoCliente")
@@ -41,7 +40,9 @@ export function proxCliente() {
   })  
 } 
 
+//BOTÃO PARA VER O CLIENTE ANTERIOR
 export function anterCliente() {
+
   let btnAnterior = document.querySelector("#anteriorBotaoCliente")
   btnAnterior.addEventListener('click', function(){
     if(contadorClientes > 0){
@@ -59,7 +60,7 @@ export function anterCliente() {
   })
 }
 
-//vALOR INICIAL NÃO COMEÇAR EM BRANCO
+//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL
 export function valorInicial(){
   adicionando = false
   let Input1 = document.querySelector("#primeiroInputCliente")
@@ -72,7 +73,7 @@ export function valorInicial(){
 
 let adicionando = false
 
-//ADICIONAR NOVO CLIENTE
+//BOTÃO PARA ADICIONAR NOVO CLIENTE
 export function novoCliente(){
   let novoCliente = document.querySelector("#novoBotaoCliente")
   novoCliente.addEventListener('click', function(){
@@ -88,7 +89,7 @@ export function novoCliente(){
   })  
 }
 
-//SALVAR CLIENTE ADICIONADO
+//BOTÃO PARA SALVAR CLIENTE ADICIONADO
 export function salvarCliente(){
   
     let salvarCliente = document.querySelector("#salvarNovoCliente")
