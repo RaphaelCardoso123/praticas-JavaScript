@@ -21,9 +21,10 @@ export let produtos = [
     }, 
 ]
 
+export let contadorProdutos = 0;
+
 //FUNÇÃO PARA LIMPAR A TELA DO PANEL
-export function semDisplay() {
-        
+export function semDisplay() {      
   let divMae = document.getElementById("clientes")
   divMae.style.display = "none";
      
@@ -37,7 +38,6 @@ export function semDisplay() {
 //PRODUTOS ABRE COM O PRIMEIRO REGISTRO VISÍVEL
 export function valorInicialProduto(){
   // let adicionandoProd = false                 //precisa desse ????
-
   let InputProd1 = document.querySelector("#primeiroInputProduto")
   InputProd1.value = produtos[0]['codProduto']
 
@@ -52,8 +52,6 @@ export function valorInicialProduto(){
 }
 
 //BOTÃO PARA VER O PRODUTO SEGUINTE
-export let contadorProdutos = 0;
-
 export function proxProduto(){
   let btnProxProd = document.querySelector("#proximoBotaoProduto")
   btnProxProd.addEventListener('click', function(){
@@ -121,3 +119,28 @@ export function novoProduto() {
     //contadorProdutos = produtos.length       //precisa desse ????
   })
 }
+
+//BOTÃO PARA SALVAR PRODUTO ADICIONADO
+export function salvarProdutos() {
+  let salvarProdutos = document.querySelector("#salvarNovoProduto")
+  salvarProdutos.addEventListener('click', function() {
+    if(adicionandoProd === true) {
+      let InputProd1 = document.querySelector("#primeiroInputProduto")
+      let InputProd2 = document.querySelector("#segundoInputProduto")
+      let InputProd3 = document.querySelector("#terceiroInputProduto")
+      let InputProd4 = document.querySelector("#quartoInputProduto")
+
+      produtos.push({
+        "codProduto" : InputProd1.value,
+        "descProduto" : InputProd2.value,
+        "precoProduto" : InputProd3.value,
+        "qtdEstoqueProd" : InputProd4.value,
+      })
+      adicionandoProd = false
+      alert("Novo produto foi salvo.")
+    } else {
+      alert("Esse produto já existe no cadastro")
+    }
+  })
+}
+
