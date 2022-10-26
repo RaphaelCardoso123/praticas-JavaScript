@@ -109,5 +109,4 @@ export function salvarCliente(){
       alert("Esse cliente já existe no cadastro")
     }
   })
-  
 }

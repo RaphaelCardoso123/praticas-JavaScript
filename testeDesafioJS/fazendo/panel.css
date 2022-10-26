@@ -242,7 +242,7 @@ section {
 
 .pedido_input_segundo {
     width: 30%;
-    height: 25px;   /* alterado quarta manhã, não existia*/
+    height: 25px;   
     cursor: pointer;
     border: 1px solid black;
     background-color: rgb(219, 226, 226);
@@ -251,7 +251,7 @@ section {
 
 .pedido_input_terceiro {
     width: 10%;
-    height: 25px;   /* alterado quarta manhã, não existia*/
+    height: 25px;   
     cursor: pointer;
     border: 1px solid black;
     background-color: rgb(219, 226, 226);
@@ -260,7 +260,7 @@ section {
 
 .pedido_input_quarto {
     width: 10%;
-    height: 25px;  /* alterado quarta manhã, não existia*/
+    height: 25px;  
     cursor: pointer;
     border: 1px solid black;
     margin-bottom: 5px;
