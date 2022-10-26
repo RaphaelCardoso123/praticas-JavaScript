@@ -14,19 +14,18 @@ export let  clientes = [
       "codCliente"   : 2,
       "nomeCliente"  : "Diana",
       "dataCadCli" :"02/05/2020",
-    },         
-    
+    },            
 ] 
 
 export let contadorClientes = 0;
 
 //BOTÃO PARA VER O CLIENTE SEGUINTE
-export function proxCliente() {
-  
+export function proxCliente() {   
   let btnProx = document.querySelector("#proximoBotaoCliente")
   btnProx.addEventListener('click', function(){
-    adicionando = false
-    if(contadorClientes < clientes.length-1) {
+  adicionando = false
+    
+  if(contadorClientes < clientes.length -1) {
       contadorClientes += 1;
       let Input1 = document.querySelector("#primeiroInputCliente")
       Input1.value = clientes[contadorClientes]['codCliente']
@@ -42,9 +41,9 @@ export function proxCliente() {
 
 //BOTÃO PARA VER O CLIENTE ANTERIOR
 export function anterCliente() {
-
   let btnAnterior = document.querySelector("#anteriorBotaoCliente")
   btnAnterior.addEventListener('click', function(){
+    
     if(contadorClientes > 0){
       adicionando = false
       contadorClientes -= 1;
@@ -73,6 +72,7 @@ export function valorInicial(){
 
 //BOTÃO PARA ADICIONAR NOVO CLIENTE
 let adicionando = false
+
 export function novoCliente(){
   let novoCliente = document.querySelector("#novoBotaoCliente")
   novoCliente.addEventListener('click', function(){
@@ -89,8 +89,7 @@ export function novoCliente(){
 }
 
 //BOTÃO PARA SALVAR CLIENTE ADICIONADO
-export function salvarCliente(){
-  
+export function salvarCliente(){  
     let salvarCliente = document.querySelector("#salvarNovoCliente")
 
     salvarCliente.addEventListener('click', function(){

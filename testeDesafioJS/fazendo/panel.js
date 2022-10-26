@@ -1,14 +1,13 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
 import {semDisplay, valorInicialProduto, proxProduto, anterProduto, contadorProdutos, novoProduto, salvarProdutos} from './produtos.js'
 
-
 //PÁGINA PANEL ABRE EM BRANCO
 semDisplay()
 
-//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL
+//CLIENTES ABRE COM O PRIMEIRO REGISTRO VISÍVEL
 valorInicial()
 
-//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL            
+//PRODUTOS ABRE COM O PRIMEIRO REGISTRO VISÍVEL            
 valorInicialProduto()                                  
 
 //BOTÃO P/ FECHAR CLIENTES
@@ -46,6 +45,7 @@ const li_clientes = document.querySelector("#li_clientes")
 
 //BOTÃO P/ ABRIR PRODUTOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTEJA ABERTA
  const li_produtos = document.querySelector("#li_produtos")  
+    
     li_produtos.addEventListener("click", function(){
     semDisplay()    
     let divPai = document.getElementById("produtos")
@@ -54,6 +54,7 @@ const li_clientes = document.querySelector("#li_clientes")
 
 //BOTÃO P/ ABRIR PEDIDOS QUANDO FOR CLICADO NO PANEL E SUMIR OUTRA QUE ESTEJA ABERTA
 const li_pedidos = document.querySelector("#li_pedidos")  
+    
     li_pedidos.addEventListener("click", function(){
     semDisplay()      
     let divPai = document.getElementById("pedido_cliente")
