@@ -1,5 +1,6 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
 import {semDisplay, valorInicialProduto, proxProduto, anterProduto, contadorProdutos, novoProduto, salvarProdutos} from './produtos.js'
+import {pedidoDados} from './pedidos.js' 
 
 //PÁGINA PANEL ABRE EM BRANCO
 semDisplay()
@@ -61,7 +62,6 @@ const li_pedidos = document.querySelector("#li_pedidos")
     divPai.style.display = "block";   
    })
 
-
 //------------------------------- CLIENTES -----------------------------------
 proxCliente()
 anterCliente()
@@ -75,3 +75,5 @@ novoProduto()
 salvarProdutos()
 
 //------------------------------- PEDIDOS -----------------------------------
+pedidoDados(clientes)
+// console.log(clientes)
