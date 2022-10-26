@@ -10,3 +10,21 @@ export function pedidoDados(clientesLista) {
         alert("Código não existente")        
     })    
 }
+
+
+export function pedDados(cliLista) {
+    let pedDados = document.querySelector("#localizarProdPrimeiro")
+    pedDados.addEventListener('focusout', function(){
+        for(let itemList of cliLista){
+            console.log(cliLista)
+            if(itemList['codProduto'] == pedDados.value) {
+                document.querySelector("#localizarProdSegundo").value = itemList['descProduto']
+                document.querySelector("#localizarProdTerceiro").value = itemList['precoProduto']
+                return
+            } 
+        }
+        alert("!!!!")        
+    })    
+}
+
+
