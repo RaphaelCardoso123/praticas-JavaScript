@@ -1,5 +1,5 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
-import {semDisplay, valorInicialProduto, proxProduto, anterProduto} from './produtos.js'
+import {semDisplay, valorInicialProduto, proxProduto, anterProduto, contadorProdutos, novoProduto} from './produtos.js'
 
 
 //PÁGINA PANEL ABRE EM BRANCO
@@ -8,7 +8,7 @@ semDisplay()
 //CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL
 valorInicial()
 
-//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL              -> teste terça/tarde
+//CLIENTES ABRE COM O PRIMEIRO CADASTRO VISÍVEL            
 valorInicialProduto()                                  
 
 //BOTÃO P/ FECHAR CLIENTES
@@ -70,3 +70,4 @@ salvarCliente()
 //------------------------------- CLIENTES -----------------------------------
 proxProduto()
 anterProduto()
+novoProduto()

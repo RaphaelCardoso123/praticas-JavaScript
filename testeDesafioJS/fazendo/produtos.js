@@ -34,11 +34,9 @@ export function semDisplay() {
   divMae.style.display = "none";
 }
 
-//teste terça/tarde 
-
 //PRODUTOS ABRE COM O PRIMEIRO REGISTRO VISÍVEL
 export function valorInicialProduto(){
-  let adicionando = false
+  // let adicionandoProd = false                 //precisa desse ????
 
   let InputProd1 = document.querySelector("#primeiroInputProduto")
   InputProd1.value = produtos[0]['codProduto']
@@ -53,16 +51,13 @@ export function valorInicialProduto(){
   InputProd4.value = produtos[0]['qtdEstoqueProd']
 }
 
-
-//teste terça/tarde 
-
 //BOTÃO PARA VER O PRODUTO SEGUINTE
 export let contadorProdutos = 0;
 
 export function proxProduto(){
   let btnProxProd = document.querySelector("#proximoBotaoProduto")
   btnProxProd.addEventListener('click', function(){
-  // adicionandoProd = false
+  // adicionandoProd = false                 //precisa desse ????
   if(contadorProdutos < produtos.length -1) {
     contadorProdutos += 1;
     let InputProd1 = document.querySelector("#primeiroInputProduto")
@@ -88,7 +83,7 @@ export function anterProduto() {
   let btnAnteriorProduto = document.querySelector("#anterBotaoProduto")
   btnAnteriorProduto.addEventListener('click', function() {
     if(contadorProdutos > 0) {
-  //adicionandoProd = false
+  //adicionandoProd = false                 //precisa desse ????
       contadorProdutos -= 1;
       let InputProd1 = document.querySelector("#primeiroInputProduto")
       InputProd1.value = produtos[contadorProdutos]['codProduto']
@@ -101,5 +96,28 @@ export function anterProduto() {
     } else {
       alert("Fim de produtos cadastrados!!")
     }
+  })
+}
+
+//BOTÃO PARA ADICIONAR NOVO PRODUTO
+let adicionandoProd = false
+export function novoProduto() {
+  let novoProduto = document.querySelector("#novoBotaoProduto")
+  novoProduto.addEventListener('click', function() {
+
+    adicionandoProd = true
+    let InputProd1 = document.querySelector("#primeiroInputProduto")
+    InputProd1.value = produtos.length
+
+    let InputProd2 = document.querySelector("#segundoInputProduto")
+    InputProd2.value = ""
+
+    let InputProd3 = document.querySelector("#terceiroInputProduto")
+    InputProd3.value = ""                      // posso deixar como string ("") onde deve ir um valor em real ???????
+
+    let InputProd4 = document.querySelector("#quartoInputProduto")
+    InputProd4.value = ""                      // posso deixar como string ("") onde deve ir um número inteiro ???????
+
+    //contadorProdutos = produtos.length       //precisa desse ????
   })
 }
