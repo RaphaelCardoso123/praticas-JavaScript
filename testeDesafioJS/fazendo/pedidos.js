@@ -11,7 +11,7 @@ export function pedidoDados(clientesLista) {
     })    
 }
 
-
+//-----------------------------------------------------------------------
 export function pedDados(cliLista) {
     let pedDados = document.querySelector("#localizarProdPrimeiro")
     pedDados.addEventListener('focusout', function(){
@@ -27,4 +27,6 @@ export function pedDados(cliLista) {
     })    
 }
 
-
+//-----------------------------------------------------------------------
+ //(botão lançar item pedidos) -> id="lancarPedido"
+ //(table) -> id="tableLista"
