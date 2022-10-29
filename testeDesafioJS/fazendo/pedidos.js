@@ -23,7 +23,7 @@ export function pedDados(cliLista) {
                 return
             } 
         }
-        alert("falha!")        
+        alert("Produto inexistente!!!")        
     })    
 }
 
