@@ -280,7 +280,7 @@ section {
     font-weight: bold;
     color: blue;
 }
-
+/*Ultima parte pedidos*/
 .item {
     width: 100%;
     margin-top: .5%;
@@ -321,7 +321,7 @@ td{ /*TESTE*/
 }
 
 /*TESTE*/
-#teste{ 
+.teste{ 
     width: 100%;
     height: 30px;
     margin-top: 40px;
@@ -329,9 +329,10 @@ td{ /*TESTE*/
     border: 2px solid blue;
     position: absolute;
 }
-/* .itensPed{
+ /* .itensPed{
     border: 2px solid yellow;
-}
+} */
+/*
 table{
     width: 100%;
 } */

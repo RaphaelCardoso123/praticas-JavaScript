@@ -32,3 +32,7 @@ export function pedDados(cliLista) {
 
 ////teste
 
+// function addProd() {
+//     let tableLista = document.querySelector("#tableLista");
+
+// }
