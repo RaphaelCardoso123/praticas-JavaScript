@@ -312,19 +312,26 @@ section {
 th {
     margin: 5px 40px 5px auto;
     position: relative;
-}
 
+}
 
 td{ /*TESTE*/
     margin: auto 20% auto 2% ;
-    border: 1px solid blue;
+    border: 1px solid red;
 }
 
-#teste{ /*TESTE*/
+/*TESTE*/
+#teste{ 
     width: 100%;
     height: 30px;
     margin-top: 40px;
     display: flex;
-    border: 2px solid yellow;
+    border: 2px solid blue;
     position: absolute;
 }
+/* .itensPed{
+    border: 2px solid yellow;
+}
+table{
+    width: 100%;
+} */
