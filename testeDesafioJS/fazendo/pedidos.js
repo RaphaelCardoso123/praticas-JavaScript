@@ -30,7 +30,7 @@ export function pedDados(cliLista) {
 //-----------------------------------------------------------------------
 
 
-////teste
+////teste pedidos itens
 
 // function addProd() {
 //     let tableLista = document.querySelector("#tableLista");
