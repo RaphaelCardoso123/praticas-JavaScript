@@ -1,6 +1,6 @@
 import {clientes, valorInicial, contadorClientes, proxCliente, anterCliente, novoCliente, salvarCliente} from './clients.js'
 import {semDisplay, valorInicialProduto, proxProduto, anterProduto, contadorProdutos, novoProduto, salvarProdutos, produtos} from './produtos.js'
-import {pedidoDados, pedDados} from './pedidos.js' 
+import {pedidoDados, pedDados, inserePedido} from './pedidos.js' 
 
 //PÁGINA PANEL ABRE EM BRANCO
 semDisplay()
@@ -77,7 +77,7 @@ salvarProdutos()
 //------------------------------- PEDIDOS -----------------------------------
 pedidoDados(clientes)
 pedDados(produtos) 
-
+inserePedido(produtos)
 
 ////////////teste pedidos itens------------------------------------------------------------
 

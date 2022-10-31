@@ -106,7 +106,7 @@
                                 <input type="text" id="localizarProdQuarto" class="pedido_input_quarto flex" name="localizar_produto">
                                 
                                 <!--id="lancarPedido" teste quinta manhã-->
-                                <button id="lancarPedido" class="lancar_pedido"><strong>Lançar no Pedido</strong></button>
+                                <button id="lancarPedido" class="lancar_pedido" type="button"><strong>Lançar no Pedido</strong></button>
                             </section>
                         </div>
 
@@ -118,28 +118,40 @@
 
                          
                         <!--ITENS-->                       
-                        <div >                                 
-                            <table id="tableLista" class="flex"> 
-                                <tr class="item flex">
-                                    <th>Item</th>
-                                    <th>Descrição</th>
-                                    <th>Preço</th>
-                                    <th>Qtd</th>
-                                    <th >Sub Total</th>
-                                </tr>
-                                <tr class="teste">
-                                    <td>a</td>
-                                    <td>b</td>
-                                    <td>c</td>
-                                    <td>d</td>
-                                </tr>
+                                                         
+                            <table id="tableLista" class=""> 
+                                <thead>
+                                    <tr class="item ">
+                                        <th>Item</th>
+                                        <th>Descrição</th>
+                                        <th>Preço</th>
+                                        <th>Qtd</th>
+                                        <th >Sub Total</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+    
+                                </tbody>
+                                <!-- <tfoot>
+                                    <tr>
+                                        <td colspan="4">
+                                        </td>
+                                        <td>Valor Total</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                        </td>
+                                        <td id="valorTotal"></td>
+                                    </tr>
+                                </tfoot> -->
                             </table>
-                        </div>
+                        
 
                         <!--VALOR TOTAL-->  <!--talvez refazer-->
                         <div class="valor_total"> 
                             <span class="simbolo_real">R$:</span>
-                            <input class="valorTotalInput">
+                            <input class="valorTotalInput" id="valorTotalResultado">
                         </div>
 
                         

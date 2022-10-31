@@ -289,8 +289,8 @@ section {
     width: 100%;
     margin-top: .5%;
     border: 1px solid red;
-    display: flex;
-    position: absolute;
+    /* display: flex;
+    position: absolute; */
 }
 
 .valor_total {
@@ -313,15 +313,19 @@ section {
     margin-top: 30px;
 }
 
-th {
-    margin: 5px 40px 5px auto;
-    position: relative;
-
+table{
+    width: 100%;
 }
 
+th {
+    width: 20%;
+}
+
+tr{
+    width: 100%;
+}
 td{ /*TESTE*/
-    margin: auto 20% auto 2% ;
-    border: 1px solid red;
+    text-align: center;
 }
 
 /*TESTE*/
