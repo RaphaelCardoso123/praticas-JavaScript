@@ -79,7 +79,4 @@ pedidoDados(clientes)
 pedDados(produtos) 
 inserePedido(produtos)
 
-////////////teste pedidos itens------------------------------------------------------------
 
-
-// addProd()

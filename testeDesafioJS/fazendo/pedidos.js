@@ -47,8 +47,6 @@ function addProd(Item, descricao, preco, qnt, subTotal) {
         td.setAttribute('class', 'subTotal')
         tr.appendChild(td)
     document.querySelector('tbody').appendChild(tr)
-
-
 }
 
 function somaTotal(){
@@ -82,11 +80,9 @@ export function inserePedido(listaProdutos){
             }
         }
         else{
-            alert('Esse item ja foi adicionado na lista')
-        }
-        
-    })
-    
+            alert('Esse item já foi adicionado na lista')
+        }       
+    })  
 }
 
 

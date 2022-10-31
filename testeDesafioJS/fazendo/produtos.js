@@ -36,8 +36,7 @@ export function semDisplay() {
 }
 
 //PRODUTOS ABRE COM O PRIMEIRO REGISTRO VISÍVEL
-export function valorInicialProduto(){
-  // let adicionandoProd = false                 
+export function valorInicialProduto(){          
   let InputProd1 = document.querySelector("#primeiroInputProduto")
   InputProd1.value = produtos[0]['codProduto']
 
@@ -55,7 +54,7 @@ export function valorInicialProduto(){
 export function proxProduto(){
   let btnProxProd = document.querySelector("#proximoBotaoProduto")
   btnProxProd.addEventListener('click', function(){
-  // adicionandoProd = false               
+            
   if(contadorProdutos < produtos.length -1) {
     contadorProdutos += 1;
     let InputProd1 = document.querySelector("#primeiroInputProduto")
@@ -80,8 +79,7 @@ export function proxProduto(){
 export function anterProduto() {
   let btnAnteriorProduto = document.querySelector("#anterBotaoProduto")
   btnAnteriorProduto.addEventListener('click', function() {
-    if(contadorProdutos > 0) {
-  //adicionandoProd = false                 
+    if(contadorProdutos > 0) {            
       contadorProdutos -= 1;
       let InputProd1 = document.querySelector("#primeiroInputProduto")
       InputProd1.value = produtos[contadorProdutos]['codProduto']
@@ -111,12 +109,11 @@ export function novoProduto() {
     InputProd2.value = ""
 
     let InputProd3 = document.querySelector("#terceiroInputProduto")
-    InputProd3.value = ""                      // posso deixar como string ("") onde deve ir um valor em real ???????
+    InputProd3.value = ""                     
 
     let InputProd4 = document.querySelector("#quartoInputProduto")
-    InputProd4.value = ""                      // posso deixar como string ("") onde deve ir um número inteiro ???????
-
-    //contadorProdutos = produtos.length       
+    InputProd4.value = ""                      
+   
   })
 }
 

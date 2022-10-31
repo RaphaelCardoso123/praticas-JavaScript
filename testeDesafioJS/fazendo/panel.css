@@ -281,24 +281,17 @@ section {
     color: blue;
 }
 
-
-
-
-/*Ultima parte pedidos*/
 .item {
     width: 100%;
     margin-top: .5%;
     border: 1px solid red;
-    /* display: flex;
-    position: absolute; */
 }
 
 .valor_total {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: 50px;           /*não está como deveria*/
-    /*border: 1px solid blue;*/
+    margin-top: 50px;     
 }
 
 .valorTotalInput {
@@ -321,15 +314,14 @@ th {
     width: 20%;
 }
 
-tr{
+tr {
     width: 100%;
 }
-td{ /*TESTE*/
+td { 
     text-align: center;
 }
 
-/*TESTE*/
-.teste{ 
+.teste { 
     width: 100%;
     height: 30px;
     margin-top: 40px;
@@ -337,10 +329,3 @@ td{ /*TESTE*/
     border: 2px solid blue;
     position: absolute;
 }
- /* .itensPed{
-    border: 2px solid yellow;
-} */
-/*
-table{
-    width: 100%;
-} */
